@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <!-- keen-dataviz@3 -->
+  <link href="https://cdn.jsdelivr.net/npm/keen-dataviz@3/dist/keen-dataviz.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/keen-dataviz@3/dist/keen-dataviz.min.js" type="text/javascript"></script>
+
+  <!-- Dashboard -->
+  <link href="./keen-dashboards.css" rel="stylesheet" type="text/css" />
+  <link href="./starter-kit.css" rel="stylesheet" type="text/css" />
+  
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+ <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-database.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 card">
+          <!-- <canvas id="ph-gauge"></canvas> -->
+          <div id="ph-gauge"></div>
+        </div>
+        <div class="col-lg-4 col-md-4 card">
+          <!-- <canvas id="temp-gauge"></canvas> -->
+        <div id="temp-gauge"></div>
+        </div>
+        <div class="col-lg-4 col-md-4 card">
+          <div id="tur-gauge"></div>
+          <!-- <canvas id="tur-gauge"></canvas> -->
+        </div>
+        <div class="row">
+          <div class="col-lg-6 card">
+            <h3 class="text-center">Speed and Volume</h3>
+            <div id="speed-vol"></div>
+          </div>
+          <div class="col-lg-4">
+            <h3 class="text-center">Real-Time Parameters</h3><br><br>
+            <table class="table table-hover bg-light">
+              <thead class="thead bg-danger">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Value</th>
+                </tr>
+            </thead>
+              <tr>
+                <th scope="row">1</th>
+                <th>Speed</th>
+                <td id="speed-display"></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <th>Volume</th>
+                <td id="vol-display"></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <th>PH</th>
+                <td id="ph-display"></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <th>TUR</th>
+                <td id="tur-display"></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <th>TEMP</th>
+                <td id="temp-display"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <script src="./graphs-construct.js"></script>
+  </body>
+
+  
+  </html>

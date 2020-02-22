@@ -1,0 +1,63 @@
+
+  <body class="keen-dashboard">
+
+    <div class="container">
+        <div class="navbar-collapse">
+          <ul class="navbar-nav nav main-nav">
+            <li><a href="https://keen.io">Home</a></li>
+            <li><a href="https://keen.io/team">Team</a></li>
+            <li><a href="https://github.com/keenlabs/dashboards/tree/gh-pages/layouts/hero-sidebar">Source</a>
+            </li>
+            <li><a href="https://groups.google.com/forum/#!forum/keen-io-devs">Community</a></li>
+            <li><a href="http://stackoverflow.com/questions/tagged/keen-io?sort=newest&pageSize=15">Technical Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container grid grid-simple-col-3">
+      <div id="speed-vol" class="hero starter-chart"></div>
+      <div id="chart-02" class="starter-chart">'
+        <div class="col-lg-4">
+          <table class="table table-hover bg-light">
+            <thead class="thead bg-danger">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Parameter</th>
+                <th scope="col">Value</th>
+              </tr>
+          </thead>
+            <tr>
+              <th scope="row">1</th>
+              <th>Speed</th>
+              <td id="speed-display"></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <th>Volume</th>
+              <td id="vol-display"></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <th>PH</th>
+              <td id="ph-display"></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <th>TUR</th>
+              <td id="tur-display"></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <th>TEMP</th>
+              <td id="temp-display"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="tur-gauge" class="starter-chart"></div>
+      <div id="ph-gauge" class="starter-chart"></div>
+      <div id="temp-gauge" class="starter-chart"></div>
+    </div>
+    <script src="./graphs-construct.js "></script>
+  </body>
